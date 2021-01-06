@@ -109,8 +109,11 @@ verifier:
 ```
 
 ```bash
-molecule list
-molecule converge
+# for colored output
+export ANSIBLE_FORCE_COLOR="1"
+export PY_COLORS="1"
+
+molecule [ list | converge | verify | reset |destroy | ...]
 ```
 
 
@@ -118,4 +121,3 @@ molecule converge
 
 * https://github.com/gdraheim/docker-systemctl-replacement
 * https://molecule.readthedocs.io/en/latest/
-
