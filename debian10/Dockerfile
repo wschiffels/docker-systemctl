@@ -1,5 +1,4 @@
 FROM debian:buster
-LABEL maintainer="Wolfgang Schiffels"
 
 RUN apt-get update && apt-get upgrade -y \
     && apt-get install -y --no-install-recommends \
